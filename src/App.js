@@ -1,10 +1,13 @@
 import './App.css';
-import { useSelector, useDispatch } from 'react-redux'
-import {incNumber, decNumber} from './actions/index'
+import { useSelector, useDispatch } from 'react-redux' // importing redux functions for changing and getting the state
+import {incNumber, decNumber} from './actions/index' // importing actions from actions folder
 
 function App() {
 
+  // for geeting the state
   const myState = useSelector((state) => state.changeNumber)
+
+  // for changing the state
   const dispatch = useDispatch()
 
   return (

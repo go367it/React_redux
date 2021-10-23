@@ -1,7 +1,8 @@
-import changeNumber from './upDown'
+import changeNumber from './upDown' // importing different reducers
 
-import { combineReducers } from 'redux'
+import { combineReducers } from 'redux' // importing a redux function for combining all the reducers
 
+// combining all the reducers
 const rootReducer = combineReducers({
     changeNumber
 })
